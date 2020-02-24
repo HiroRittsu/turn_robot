@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>turn_robot</name>
-  <version>0.0.1</version>
-  <description>an example of a python package</description>
-  <maintainer email="is0449sh@ed.ritsumei.ac.jp">ItoMasaki</maintainer>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="zq6295migly@gmail.com">migly</maintainer>
   <license>TODO: License declaration</license>
 
-<!--   <exec_depend>モジュール名</exec_depend>   -->
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>launch_ros</exec_depend>
-  <exec_depend>launch</exec_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
   <export>
-<!--    <build_type>ament_python</build_type>     -->
-  <build_type>ament_python</build_type>
+    <build_type>ament_python</build_type>
   </export>
 </package>

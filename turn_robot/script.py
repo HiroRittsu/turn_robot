@@ -7,7 +7,6 @@ from geometry_msgs.msg import Twist
 from rione_msgs.msg import Command
 from numpy import pi
 import numpy as np
-from ekf import EKF
 from std_msgs.msg import String
 
 
@@ -24,8 +23,6 @@ class TurnRobot(Node):
         self.degree = 0.0
         self.target_degree = 0
         self.vel = None
-
-        self._filter = EKF(0, 0, 0, 0.02)
 
     @staticmethod
     def to_angle(rad: float):
