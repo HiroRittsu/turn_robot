@@ -8,6 +8,8 @@ setup(
     packages=[],
     py_modules=[
         'turn',
+        'turn_robot',
+        'ekf',
     ],
     install_requires=['setuptools'],
     data_files=[
@@ -31,6 +33,7 @@ setup(
     entry_points={
         'console_scripts': [
             'turn_node = turn:main',
+            'turn_robot = turn_robot:main',
         ],
     },
 )
